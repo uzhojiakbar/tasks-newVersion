@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tasks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="responsive.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">
+        <h1 class="task_count"><span id="task_count"></span> Tasks</h1>
+        <!-- <h2 class="remain_count"><span id="remain_count"></span> Remain</h2> -->
+      </div>
+      <!-- <div class="search">
+            <input type="text" placeholder="search task" id="searchBtn" class="search_input" name="" id="">
+            <button id="seachbtn" onclick="SearchFunc(`${value.name}`)" class="seachbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> -->
+      <div id="data" class="data"></div>
+      <div class="data-add">
+        <input
+          id="input"
+          class="addtoo"
+          type="text"
+          placeholder="Add Too..."
+          id=""
+        />
+        <button onclick="AddData()" id="adtoo" class="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </div>
+    <script src="tasks.js"></script>
+  </body>
+</html>

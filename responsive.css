@@ -1,0 +1,124 @@
+@media (max-width:1320px) {
+    .main {
+        /* max-width: 50vw; */
+        min-width: 70vh;
+    }
+
+    .notfound_icon {
+        width: 80%;
+    }
+}
+
+@media (max-width:800px) {
+    .main {
+        max-width: 50vw;
+    }
+
+    .main * {
+        transition: .3s;
+    }
+
+    .task_count {
+        font-size: 40px;
+    }
+
+    .notfound_icon {
+        width: 50%;
+    }
+}
+
+@media (max-width:600px) {
+    .main {
+        max-width: 50vw;
+        min-width: 60vw;
+    }
+
+    .task_count {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .main {
+        max-width: 80vw;
+        min-width: 80vw;
+    }
+
+    .task_count {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:300px) {
+    .main {
+        /* max-width: 80vw; */
+        min-width: 90vw;
+        min-height: 80vh;
+    }
+
+    .task_count {
+        font-size: 35px;
+    }
+
+    .task-name {
+        font-size: 15px;
+    }
+
+    .task-delete,
+    .add {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .addtoo {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-height:300px) {
+    .task_count {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .data-item {
+        min-height: 50%;
+    }
+
+    .task-delete,
+    .add {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+
+    .addtoo {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+@media (max-height:250px) {
+    .task_count {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .data-item {
+        min-height: 100%;
+    }
+
+    .task-delete,
+    .add {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+
+    .addtoo {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
