@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Tasks</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -16,33 +16,37 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="responsive.css"
+      href="./responsive.css"
     />
+    <link rel="stylesheet" type="text/css" media="screen" href="./login.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="title">
-        <h1 class="task_count"><span id="task_count"></span> Tasks</h1>
-        <!-- <h2 class="remain_count"><span id="remain_count"></span> Remain</h2> -->
+    <div class="main login-main">
+      <div id="title" class="title">
+        <div class="task_count">Kirish</div>
       </div>
-      <!-- <div class="search">
-            <input type="text" placeholder="search task" id="searchBtn" class="search_input" name="" id="">
-            <button id="seachbtn" onclick="SearchFunc(`${value.name}`)" class="seachbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div> -->
+      <div id="body"></div>
+      <button onclick="AddData()" id="register" class="add">
+        Hisob yo`qmi? Ro`yxatdan o`tish uchun bosing
+      </button>
+      <div></div>
+    </div>
+    <!-- *Main -->
+    <script src="./js/app.js"></script>
+
+    <!-- *Components -->
+    <script src="./js/tasks.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
+
+<!-- <div id="title" class="title">
+        <h1 class="task_count"><span id="task_count"></span> Tasks</h1>
+      </div>
       <div id="data" class="data"></div>
       <div class="data-add">
-        <input
-          id="input"
-          class="addtoo"
-          type="text"
-          placeholder="Add Too..."
-          id=""
-        />
+        <input id="input" class="addtoo" type="text" placeholder="Add Too..." />
         <button onclick="AddData()" id="adtoo" class="add">
           <i class="fa-solid fa-plus"></i>
         </button>
-      </div>
-    </div>
-    <script src="tasks.js"></script>
-  </body>
-</html>
+      </div> -->

@@ -1,238 +1,232 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-    transition: .3s;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  transition: 0.3s;
+
+  user-select: none;
 }
 
 body {
-    height: 100vh;
-    background-color: #f98a89;
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    background-color: #85FFBD;
-    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  height: 100vh;
+  background-color: #f98a89;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main {
-    padding: 50px 20px;
-    border-radius: 5%;
-    min-width: 32vw;
-    max-width: 32vw;
-    box-shadow: rgba(0, 0, 0, 0.95) 0px 25px 30px 0px;
-    min-height: 90vh;
-    max-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
+  padding: 50px 20px;
+  border-radius: 5%;
+  min-width: 32vw;
+  max-width: 32vw;
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 25px 30px 0px;
+  min-height: 90vh;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
 }
 
 /* title */
 
 .title {
-    width: 100%;
-    height: 15%;
-    border-bottom: 1px solid grey;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: green;
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .task_count {
-    font-size: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: monospace;
+
+  text-align: center;
 }
 
 .remain_count {
-    font-size: 30px;
-    font-weight: 100;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 /* / title */
 
 /* data */
 .data {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: auto;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
 }
 
 /* data item */
 
 .data-item {
-    padding: 2px;
-    width: 95%;
-    display: flex;
-    min-height: 25%;
-    align-items: center;
-    justify-content: space-between;
+  padding: 2px;
+  width: 95%;
+  display: flex;
+  min-height: 25%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.dataname,.data-check{
-    cursor: pointer;
+.dataname,
+.data-check {
+  cursor: pointer;
 }
 
 .task-name {
-    font-size: 20px;
-    max-width: 80%;
-    color: black;
+  font-size: 20px;
+  max-width: 80%;
+  color: black;
 }
-
-
 
 /* not found */
 .not-found {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-}
-
-.notfound_icon {
-    /* width: 30%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
 }
 
 .notfound-txt {
-    color: #122348;
-    font-weight: 900;
-
+  color: #122348;
+  font-weight: 900;
 }
-
 
 /* / not found */
 
 .task-delete {
-    background-color: transparent;
-    outline: none;
-    font-size: 20px;
-    color: red;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px 25px;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  color: red;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 25px;
 }
 
 .task-delete:hover {
-    background-color: red;
-    cursor: pointer;
-    color: white;
+  background-color: red;
+  cursor: pointer;
+  color: white;
 }
 
 .task-delete:active {
-    background-color: rgba(255, 0, 0, 0.788);
-    cursor: pointer;
-    color: white;
+  background-color: rgba(255, 0, 0, 0.788);
+  cursor: pointer;
+  color: white;
 }
 
 /* /data item */
-
 
 /* / data */
 
 /* data add */
 .data-add {
-    width: 95%;
-    display: flex;
-    gap: 5px;
-    color: #122348;
-    align-items: center;
-    height: 10%;
-    justify-content: space-between;
+  width: 95%;
+  display: flex;
+  gap: 5px;
+  color: #122348;
+  align-items: center;
+  height: 10%;
+  justify-content: space-between;
 }
 
 .addtoo {
-    width: 80%;
-    padding: 10px;
-    font-size: 20px;
-    outline: none;
-    color: green;
-    border: 2px solid green;
-    border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+  color: green;
+  border: 2px solid green;
+  border-radius: 15px;
 }
 
 .addtoo::placeholder {
-    color: green;
-    font-style: italic;
+  color: green;
+  font-style: italic;
 }
 
-
-
 .add {
-    background-color: transparent;
-    outline: none;
-    font-size: 20px;
-    color: green;
-    border: 2px solid white;
-    border-radius: 20px;
-    padding: 10px 25px;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  color: green;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px 25px;
 }
 
 .add:hover {
-    background-color: green;
-    cursor: pointer;
-    color: white;
+  background-color: green;
+  cursor: pointer;
+  color: white;
 }
 
 .add:active {
-    background-color: rgba(0, 128, 0, 0.808);
-    cursor: pointer;
-    color: white;
+  background-color: rgba(0, 128, 0, 0.808);
+  cursor: pointer;
+  color: white;
 }
 
 /* /data add */
 
 .search {
-    width: 100%;
-    display: flex;
-    gap: 5px;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
 }
 
 .seachbtn {
-    background-color: transparent;
-    outline: none;
-    font-size: 20px;
-    color: green;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    padding: 5px 20px;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  color: green;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 5px 20px;
 }
 
 .seachbtn:hover {
-    background-color: green;
-    cursor: pointer;
-    color: white;
+  background-color: green;
+  cursor: pointer;
+  color: white;
 }
 
 .seachbtn:active {
-    background-color: rgba(0, 128, 0, 0.808);
-    cursor: pointer;
-    color: white;
+  background-color: rgba(0, 128, 0, 0.808);
+  cursor: pointer;
+  color: white;
 }
 
 .search_input {
-    padding: 5px 20px;
-    width: 80%;
-    font-size: 20px;
-    outline: none;
-    color: green;
-    border: 2px solid green;
-    border-radius: 15px;
+  padding: 5px 20px;
+  width: 80%;
+  font-size: 20px;
+  outline: none;
+  color: green;
+  border: 2px solid green;
+  border-radius: 15px;
 }
 
 .search_input::placeholder {
-    color: green;
+  color: green;
 }
 /* /search */
