@@ -3,13 +3,8 @@
 var users = [
   {
     id: 1,
-    name: "opisis",
-    pass: "123",
-  },
-  {
-    id: 2,
-    name: "asadbek",
-    pass: "123",
+    name: "user",
+    pass: "user",
   },
 ];
 
