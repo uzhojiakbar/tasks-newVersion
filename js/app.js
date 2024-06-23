@@ -2,9 +2,18 @@ let siteBody = document.getElementById("body");
 isLogin = false;
 page = "/login";
 
-var getData = () => {
-  console.log(isLogin);
+const changePage = (pageText) => {
+  try {
+    page = pageText;
+    getData();
+    console.log(`Ushbu sahifaga otildi ${pageText}`);
+  } catch (error) {
+    console.error(`xatolik ${error}`);
+  }
+};
 
+var getData = () => {
+  error = "Kirish";
   if (isLogin) {
     console.log("LOOG:", tasks);
     siteBody.innerHTML = ` 
@@ -50,36 +59,13 @@ var getData = () => {
           />
           <button onclick="LoginUser()" id="adtoo" class="add">Kirish</button>
         </div>
-        <button onclick="AddData()" id="register" class="add">
+        <button onclick="changePage('/signUp')" id="register" class="add">
         Hisob yo'qmi? Ro'yxatdan o'tish uchun bosing
       </button>
       <div></div>
       `;
     } else if (page === "/signUp") {
-      siteBody.innerHTML = ` 
-     <div id="title" class="title">
-        <div class="task_count">Kirish</div>
-      </div>
-        <div class="login">
-          <input
-            id="username_login"
-            class="addtoo inputLogin"
-            type="text"
-            placeholder="Username yozing..."
-          />
-          <input
-            id="pass_login"
-            class="addtoo inputLogin"
-            type="password"
-            placeholder="Password yozing..."
-          />
-          <button onclick="LoginUser()" id="adtoo" class="add">Kirish</button>
-        </div>
-        <button onclick="AddData()" id="register" class="add">
-        Hisob yo'qmi? Ro'yxatdan o'tish uchun bosing
-      </button>
-      <div></div>
-      `;
+      siteBody.innerHTML = SignUpHtml;
     }
   }
 };

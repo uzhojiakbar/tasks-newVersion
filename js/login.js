@@ -1,6 +1,6 @@
 // let TITLE = document.getElementById("title");
 
-const users = [
+var users = [
   {
     id: 1,
     name: "opisis",

@@ -35,35 +35,35 @@ getData();
 
 // * sign in profile
 
-let DelData = (id) => {
-  if (tasks.length) {
-    tasks = tasks.filter((value) => value.id != id);
-    console.log(tasks);
-    getData();
-  }
-  if (tasks.length == 0) {
-    dataName.innerHTML = `
-            <div class="not-found" >
-                <img class="notfound_icon" src="./img/search.gif" alt="" >
-                    <h2 class="notfound-txt">
-                        Hech qanday malumot mavjud emas
-                    </h2>
-        </div> `;
-  }
-  taskCountCalc();
-};
+// let DelData = (id) => {
+//   if (tasks.length) {
+//     tasks = tasks.filter((value) => value.id != id);
+//     console.log(tasks);
+//     getData();
+//   }
+//   if (tasks.length == 0) {
+//     dataName.innerHTML = `
+//             <div class="not-found" >
+//                 <img class="notfound_icon" src="./img/search.gif" alt="" >
+//                     <h2 class="notfound-txt">
+//                         Hech qanday malumot mavjud emas
+//                     </h2>
+//         </div> `;
+//   }
+//   taskCountCalc();
+// };
 
-let inputValue = "";
-input.addEventListener("change", (e) => (inputValue = e.target.value));
-let AddData = () => {
-  if (inputValue.length) {
-    tasks = [...tasks, { id: tasks.length + 1, name: inputValue }];
-    inputValue = "";
-    input.value = "";
-    getData();
-    taskCountCalc();
-  }
-};
+// let inputValue = "";
+// input.addEventListener("change", (e) => (inputValue = e.target.value || ""));
+// let AddData = () => {
+//   if (inputValue.length) {
+//     tasks = [...tasks, { id: tasks.length + 1, name: inputValue }];
+//     inputValue = "";
+//     input.value = "";
+//     getData();
+//     taskCountCalc();
+//   }
+// };
 
 // let SearchValue = '';
 // Insearch.addEventListener('change', (x) => SearchValue = x.target.value)
