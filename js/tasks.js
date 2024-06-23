@@ -8,10 +8,6 @@ let search = document.getElementById("search");
 let Insearch = document.getElementById("searchBtn");
 let searchBtn = document.getElementById("seachbtn");
 
-let siteBody = document.getElementById("body");
-
-isLogin = false;
-
 let tasks = [
   {
     id: 1,
