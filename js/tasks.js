@@ -54,7 +54,7 @@ let DelData = (id) => {
 };
 
 let inputValue = "";
-input.addEventListener("change", (e) => (inputValue = e.target.value));
+// input.addEventListener("change", (e) => (inputValue = e.target.value));
 let AddData = () => {
   if (inputValue.length) {
     tasks = [...tasks, { id: tasks.length + 1, name: inputValue }];
